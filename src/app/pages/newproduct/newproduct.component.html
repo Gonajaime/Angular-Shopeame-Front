@@ -1,0 +1,17 @@
+
+
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <input formControlName="imgUrl" placeholder="ImgUrl">
+<input formControlName="name" placeholder="Name...">
+<input formControlName="price" placeholder="Price...">
+<input formControlName="stars" placeholder="0-5"/>
+<button type="submit">Add</button>
+</form>
+
+<div>
+<img src="{{newProduct.imgUrl}}" alt="{{newProduct.title}}">
+<h4>{{newProduct?.name}}</h4>
+<h2>{{newProduct?.price}}</h2>
+<p-rating [(ngModel)]="newProduct.stars" [cancel]="false">{{newProduct?.stars}}</p-rating>
+</div>

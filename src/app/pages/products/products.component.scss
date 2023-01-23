@@ -1,0 +1,58 @@
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    background-color: #FFFF;
+    margin: 5% 15%;
+    padding: 5rem 3rem;
+    border-radius: 6%;
+
+    .productsInput{
+        width: 100%;
+    display: flex;
+    align-items: flex-end;
+    }
+
+
+
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        justify-content: flex-end;
+        h4{
+            width: max-content;
+        }
+        
+        .p-rating{
+            display: flex;
+        }
+    }
+    .imgProducts{
+        
+        height: 150px;
+    }
+    button{
+        margin-left: 5rem;
+    }
+    .inputs{
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+        flex-direction: row;
+
+        .ratingProducts{
+            color: yellow;
+        }
+    }
+    
+    
+}
+input{
+    width: 200px;
+    height: 36px;
+}
+
+

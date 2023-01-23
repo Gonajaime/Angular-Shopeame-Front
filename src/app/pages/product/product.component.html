@@ -1,0 +1,9 @@
+<div >
+    <img src="{{product?.imgUrl}}" alt="{{product?.name}}">
+    <h4>{{product?.name}}</h4>
+    <h2>{{product?.price}}€</h2>
+    <p-rating [(ngModel)]="product.stars" [cancel]="false">{{product?.stars}}</p-rating>
+    <button routerLink="/">Back</button>
+    <button routerLink="/updateProduct/{{product?.id}}">Update Product</button>
+    <button (click)="deleteProduct()">Delete</button>
+</div>

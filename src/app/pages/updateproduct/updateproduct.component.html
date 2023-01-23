@@ -1,0 +1,33 @@
+<div class="divBackground">
+
+
+<div class="updateTitle">
+    <h2>Management of products</h2>
+</div>
+
+<div class="updateMain">
+<div class="updateForm">
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <p>Product imgUrl:</p>
+    <input class="updateInput" formControlName="imgUrl" placeholder="ImgUrl">
+    <p>Product name:</p>
+<input class="updateInput" formControlName="name" placeholder="Name...">
+<p>Product price €:</p>
+<input class="updateInput" formControlName="price" placeholder="Price...">
+<p>Product stars:</p>
+<input class="updateInput" formControlName="stars" placeholder="0-5"/>
+<div>
+<button class="updateButton" type="submit">Save</button>
+</div>
+</form>
+</div>
+
+<div class="updateCard">
+    <img src="{{updatedProduct.imgUrl}}" alt="{{updatedProduct.title}}">
+    <h4>{{updatedProduct?.name}}</h4>
+    <h2>{{updatedProduct?.price}}</h2>
+    <p-rating [(ngModel)]="updatedProduct.stars" [cancel]="false">{{updatedProduct?.stars}}</p-rating>
+</div>
+
+</div>
+</div>

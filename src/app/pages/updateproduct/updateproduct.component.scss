@@ -1,0 +1,35 @@
+.divBackground{
+    background-color: #FFFFFF;
+    margin: 5% 15%;
+}
+
+img{
+    height: 300px;
+
+}
+.updateMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.updateTitle{
+    margin-left: 2.3rem;
+    padding-top: 0.5%;
+}
+.updateCard{
+    margin-left: 5rem;
+}
+
+.updateInput{
+    width: 518px;
+    height: 36px;
+}
+.updateButton{
+    width: 150px;
+    height: 32px;
+    color: #FFFFFF;
+    background-color: #F89F21;
+    margin-left: 23rem;
+    margin-top: 2rem;
+
+}

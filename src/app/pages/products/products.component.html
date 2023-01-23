@@ -1,0 +1,16 @@
+
+<div class="products">
+    <div class="productsInput">
+        <h3>List of products ({{productList.length}})</h3>
+    <input type="text" placeholder="Search..." #filtro (input)="filtrar(filtro.value)"/>
+    </div>
+<div *ngFor="let product of paintedProducts">
+    <img class="imgProducts" src="{{product.imgUrl}}" alt="{{product!.name}}">
+    <h4>{{product.name}}</h4>
+    <h2>{{product.price}}€</h2>
+    <div class="inputs">
+        <p-rating class="ratingProducts" [(ngModel)]="product.stars" [cancel]="false">{{product?.stars}}</p-rating>
+    <button routerLink="/product/{{product.id}}">Edit</button>
+</div>
+</div>
+</div>
